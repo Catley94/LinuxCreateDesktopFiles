@@ -1,39 +1,54 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Text;
 
-using System.Text;
+/*
+ * Really simple console app which will ask you:
+ * Name of App
+ * Executable path of program
+ * Comments on what the program is
+ * What type of console app this is (Ex: Application)
+ * What categories this app should be under in Start Menu (delimeter is a semicolon ; )
+ * Does this app run in the Terminal?
+ * 
+ */
 
 string username = Environment.UserName;
 string saveLocation = $"{Directory.GetDirectoryRoot(Directory.GetCurrentDirectory())}home/{username}/DesktopFiles/";
+string fullPath = String.Empty;
 string postfix = ".desktop";
+
+//Below are the variables filled out by the user
 string name = String.Empty;
 string executablePath = String.Empty;
 string comment = String.Empty;
 string type = String.Empty;
 string categories = String.Empty;
 string terminalApp = String.Empty;
-string fullPath = String.Empty;
 
-Console.WriteLine(saveLocation);
-
-Console.WriteLine("Name of Desktop File and Application:");
-name = Console.ReadLine();
-
-Console.WriteLine("Executable Path of Program (inc prefixed commands):");
-executablePath = Console.ReadLine();
-
-Console.WriteLine("Comments:");
-comment = Console.ReadLine();
-
-Console.WriteLine("Type (ex: Application):"); 
-type = Console.ReadLine();   
-
-Console.WriteLine("Categories (seperate with ; ):"); 
-categories = Console.ReadLine();   
-
-Console.WriteLine("Terminal App? (true / false):"); 
-terminalApp = Console.ReadLine();
+GetInfoFromUser();
 
 CreateFile();
+
+#region Functions
+void GetInfoFromUser()
+{
+    Console.WriteLine("Name of Desktop File and Application:");
+    name = Console.ReadLine();
+
+    Console.WriteLine("Executable Path of Program (inc prefixed commands):");
+    executablePath = Console.ReadLine();
+
+    Console.WriteLine("Comments:");
+    comment = Console.ReadLine();
+
+    Console.WriteLine("Type (ex: Application):"); 
+    type = Console.ReadLine();   
+
+    Console.WriteLine("Categories (seperate with ; ):"); 
+    categories = Console.ReadLine();   
+
+    Console.WriteLine("Terminal App? (true / false):"); 
+    terminalApp = Console.ReadLine();
+}
 
 void CreateFile()
 {
@@ -83,4 +98,5 @@ void CreateFile()
     }
 }
 
+#endregion
 
