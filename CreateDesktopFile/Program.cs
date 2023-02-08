@@ -8,7 +8,15 @@
  * What type of console app this is (Ex: Application)
  * What categories this app should be under in Start Menu (delimeter is a semicolon ; )
  * Does this app run in the Terminal?
+ *
+ * It outputs the generated Desktop Files in /home/<user>/DesktopFiles
+ * If this folder does not exist, it will create it automatically.
+ *
+ *
  * 
+ * Additional functionality which could be added:
+ * 1. When running the terminal app through terminal, add in a output path (as an argument)
+ * instead of using the default DesktopFiles.
  */
 
 string username = Environment.UserName;
