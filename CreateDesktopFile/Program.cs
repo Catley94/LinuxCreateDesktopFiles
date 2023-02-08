@@ -12,7 +12,8 @@
  */
 
 string username = Environment.UserName;
-string saveLocation = $"{Directory.GetDirectoryRoot(Directory.GetCurrentDirectory())}home/{username}/DesktopFiles/";
+string homeFolder = $"{Directory.GetDirectoryRoot(Directory.GetCurrentDirectory())}home/{username}";
+string saveLocation = $"{homeFolder}/DesktopFiles/";
 string fullPath = String.Empty;
 string postfix = ".desktop";
 
@@ -28,7 +29,7 @@ GetInfoFromUser();
 
 CreateFile();
 
-#region Functions
+#region Main
 void GetInfoFromUser()
 {
     Console.WriteLine("Name of Desktop File and Application:");
@@ -50,11 +51,18 @@ void GetInfoFromUser()
     terminalApp = Console.ReadLine();
 }
 
+
+
 void CreateFile()
 {
+    if (!CheckIfFolderExists(saveLocation))
+    {
+        Console.WriteLine("Creating Folder now...");
+        CreateFolder(saveLocation);tes
+    }
+
     string compiledName = name + postfix;
     fullPath = saveLocation + compiledName;
-    Console.WriteLine(fullPath);
     try
     {
         if (File.Exists(fullPath))
@@ -97,6 +105,29 @@ void CreateFile()
         Console.WriteLine(Ex.ToString());   
     }
 }
+
+#region Utility
+
+bool CheckIfFolderExists(string folderLocation)
+{
+    if (Directory.Exists(folderLocation))
+    {
+        Console.WriteLine("Folder exists");
+        return true;
+    }
+    else
+    {
+        Console.WriteLine("Folder does not exist");
+        return false;
+    }
+}
+
+void CreateFolder(string folderLocation)
+{
+    Directory.CreateDirectory(folderLocation);
+}
+
+#endregion
 
 #endregion
 
