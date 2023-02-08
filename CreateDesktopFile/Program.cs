@@ -58,7 +58,7 @@ void CreateFile()
     if (!CheckIfFolderExists(saveLocation))
     {
         Console.WriteLine("Creating Folder now...");
-        CreateFolder(saveLocation);tes
+        CreateFolder(saveLocation);
     }
 
     string compiledName = name + postfix;
