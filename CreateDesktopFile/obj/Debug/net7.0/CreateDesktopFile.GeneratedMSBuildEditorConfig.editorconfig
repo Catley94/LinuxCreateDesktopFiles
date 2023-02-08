@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CreateDesktopFile
-build_property.ProjectDir = /home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/
+build_property.ProjectDir = /home/sam/GitHub/LinuxCreateDesktopFiles/CreateDesktopFile/

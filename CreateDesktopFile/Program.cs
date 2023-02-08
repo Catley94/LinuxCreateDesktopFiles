@@ -2,7 +2,8 @@
 
 using System.Text;
 
-string saveLocation = Directory.GetDirectoryRoot(Directory.GetCurrentDirectory()) + "home/sam/DesktopFiles/";
+string username = "System.Security.Principal.WindowsIdentity.GetCurrent().Name";
+string saveLocation = Directory.GetDirectoryRoot(Directory.GetCurrentDirectory()) + $"home/{username}/DesktopFiles/";
 string postfix = ".desktop";
 string name = String.Empty;
 string executablePath = String.Empty;
@@ -12,9 +13,6 @@ string categories = String.Empty;
 string terminalApp = String.Empty;
 string fullPath = String.Empty;
 
-DirectoryInfo firstLevel = Directory.GetParent(Directory.GetCurrentDirectory());
-// DirectoryInfo secondLevel = Directory.GetParent(Directory.tfirstLevel);
-// Directory.SetCurrentDirectory(saveLocation);
 Console.WriteLine(saveLocation);
 
 Console.WriteLine("Name of Desktop File and Application:");
