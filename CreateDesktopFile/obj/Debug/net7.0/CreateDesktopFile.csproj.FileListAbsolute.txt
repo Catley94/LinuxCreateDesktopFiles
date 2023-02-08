@@ -1,0 +1,15 @@
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/bin/Debug/net7.0/CreateDesktopFile
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/bin/Debug/net7.0/CreateDesktopFile.deps.json
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/bin/Debug/net7.0/CreateDesktopFile.runtimeconfig.json
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/bin/Debug/net7.0/CreateDesktopFile.dll
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/bin/Debug/net7.0/CreateDesktopFile.pdb
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/CreateDesktopFile.csproj.AssemblyReference.cache
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/CreateDesktopFile.GeneratedMSBuildEditorConfig.editorconfig
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/CreateDesktopFile.AssemblyInfoInputs.cache
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/CreateDesktopFile.AssemblyInfo.cs
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/CreateDesktopFile.csproj.CoreCompileInputs.cache
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/CreateDesktopFile.dll
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/refint/CreateDesktopFile.dll
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/CreateDesktopFile.pdb
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/CreateDesktopFile.genruntimeconfig.cache
+/home/sam/RiderProjects/CreateDesktopFile/CreateDesktopFile/obj/Debug/net7.0/ref/CreateDesktopFile.dll
