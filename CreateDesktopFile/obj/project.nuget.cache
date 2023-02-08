@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RiodjFKvlL2rk9EZUzZeHyvnLdU94Azzg5I1D6v1FCl+D6lGFvawBJxjWAsB0OfrT5/ckm5r8SOizBzI/G2RoQ==",
+  "dgSpecHash": "jHRatT+yEnlk5veU9h+OQqB/GwHftyNXi83S7rZFK/bpmvlPhbu6i3WJpSbn7A1ZiApCOxFn6/b5DjA9IMk6+w==",
   "success": true,
   "projectFilePath": "/home/sam/GitHub/LinuxCreateDesktopFiles/CreateDesktopFile/CreateDesktopFile.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/sam/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/7.0.2/microsoft.netcore.app.runtime.linux-x64.7.0.2.nupkg.sha512",
+    "/home/sam/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/7.0.2/microsoft.aspnetcore.app.runtime.linux-x64.7.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
