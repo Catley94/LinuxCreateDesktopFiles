@@ -32,6 +32,7 @@ string comment = String.Empty;
 string type = String.Empty;
 string categories = String.Empty;
 string terminalApp = String.Empty;
+string iconPath = String.Empty;
 
 GetInfoFromUser();
 
@@ -57,6 +58,9 @@ void GetInfoFromUser()
 
     Console.WriteLine("Terminal App? (true / false):"); 
     terminalApp = Console.ReadLine();
+    
+    Console.WriteLine("Icon Path:"); 
+    iconPath = Console.ReadLine();
 }
 
 
@@ -89,7 +93,8 @@ void CreateFile()
                 $"Exec={executablePath}\n" +
                 $"Terminal={terminalApp}\n" +
                 $"Type={type}\n" +
-                $"Categories={categories}\n"
+                $"Categories={categories}\n" +
+                $"Icon={iconPath}\n"
             );
             fs.Write(body, 0, body.Length);
         }
