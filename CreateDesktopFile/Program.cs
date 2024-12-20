@@ -21,7 +21,7 @@
 
 string username = Environment.UserName;
 string homeFolder = $"{Directory.GetDirectoryRoot(Directory.GetCurrentDirectory())}home/{username}";
-string saveLocation = $"{homeFolder}/DesktopFiles/";
+string saveLocation = $"{homeFolder}/.local/share/applications/";
 string fullPath = String.Empty;
 string postfix = ".desktop";
 
